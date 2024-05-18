@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: new;
+  src: url(./assets/Poppins-SemiBold.ttf);
+}
+.app{
+  @apply  flex flex-row text-white h-screen  font-new ;
+}
+
+.login {
+  @apply  grid place-content-center 
+  
+  text-white text-xl ;
+}
+
+.login a {
+  @apply bg-green-600 max-w-52 p-3 m-32 rounded-xl;
+}
+.login img{
+  @apply mt-24;
+}
+.sidebar{
+  @apply flex flex-col p-5 bg-black max-w-72  ;
+}
+.sub {
+  @apply bg-[#262626] p-2 mt-5 rounded-lg min-w-64;
+}
+
+#sp img{
+  @apply max-w-44 max-h-20;
+}
+.home{
+  @apply  flex flex-row  items-center gap-5 mt-10 p-2 hover:bg-[#3d424a] rounded-md min-w-60;
+}
+.home img{
+  @apply max-w-10;
+}
+.search{
+  @apply  flex flex-row  items-center gap-5 m-0 p-2 hover:bg-[#3d424a]  rounded-md min-w-60;
+}
+.search img{
+  @apply max-w-10;
+}
+.library{
+  @apply  flex flex-row  items-center gap-5 m-0 p-2 hover:bg-[#3d424a] rounded-md min-w-60;
+}
+.library img{
+  @apply max-w-9;
+}
+.add{
+  @apply  flex flex-row  items-center gap-5 m-0 p-2 hover:bg-[#3d424a] rounded-md min-w-60;
+}
+.add img{
+  @apply max-w-9;
+}
+
+.Main{
+  background: rgb(28,33,33);
+background: linear-gradient(0deg, rgba(28,33,33,1) 25%, rgba(137,23,48,1) 91%);
+@apply min-h-screen w-full  overflow-y-scroll;
+}
+
+.arrow{
+  @apply  mt-5 flex flex-row   gap-2;
+}
+
+
+ .arrow .left button{
+  @apply bg-[#1e293b] rounded-full p-2 w-10 m-2 opacity-75 hover:bg-green-600;
+}
+.arrow .right button{
+  @apply bg-[#1e293b] rounded-full p-2 w-10  m-2 hover:bg-green-600 opacity-75 ;
+}
+.Main h1{
+  @apply text-5xl p-4;
+}
+.first{
+  @apply  text-xs bg-[#1e293b] bg-opacity-50  hover:bg-opacity-75 flex flex-row  justify-evenly items-center gap-2 p-2 rounded-md min-w-72 m-5 min-h-20;
+}
+.first img{
+  @apply  rounded-sm size-12;
+}
+
+.first button img{
+  @apply  size-10 m-2 opacity-0 hover:opacity-100 transition-opacity duration-300 drop-shadow-xl hover:-translate-y-1 transition ease-in-out;
+}
+.playlists{
+  @apply grid grid-cols-4 grid-rows-2 gap-y-px;
+}
+
+.second{
+  @apply  text-xs bg-[#1e293b] bg-opacity-50  hover:bg-opacity-75 flex flex-row justify-evenly items-center gap-2 p-2 rounded-md min-w-72 m-5 min-h-20;
+}
+.second img{
+  @apply   rounded-sm size-12;
+}
+
+.second button img{
+  @apply  size-10 m-2 opacity-0 hover:opacity-100 transition-opacity duration-300 drop-shadow-xl hover:-translate-y-1 transition ease-in-out;
+}
+
+.toplists{
+  @apply m-2;
+}
+.top1{
+  @apply   max-w-40 max-h-64 bg-[#334155] p-2 m-2  flex flex-col items-center rounded-lg bg-opacity-0 hover:bg-opacity-50;
+}
+.top1 img{
+  @apply size-36;
+}
+.top1 h1{
+  @apply text-sm;
+}
+.top1 p{
+  @apply text-xs  line-clamp-1;
+}
+
+
+.top1 button img{
+  @apply size-10 opacity-0 absolute top-1/2 right-0 -translate-x-1/2 -translate-y-1/2
+  hover:opacity-100  ease-in-out drop-shadow-xl 
+  transition-opacity duration-300;
+}
+
+
+.topsub{
+  @apply flex flex-row
+}
+.episode1{
+  @apply   max-w-40 max-h-64 bg-[#334155] p-2 m-2  flex flex-col items-center rounded-lg bg-opacity-0 hover:bg-opacity-50;
+}
+.episode1 .paly-button button img{
+  @apply size-2 mr-2 opacity-0 
+  hover:opacity-100  ease-in-out drop-shadow-xl 
+  transition-opacity duration-300;
+}
+
+.episode1 h1{
+  @apply text-xs line-clamp-1;
+}
+.range{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgb(105, 103, 99);
+  width:50%;
+  height:10px;
+}
+
+.range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+
+}
+.album{
+  background: rgb(28,33,33);
+background: linear-gradient(0deg, rgba(28,33,33,1) 24%, rgba(40,23,137,1) 91%);
+}
+
+
